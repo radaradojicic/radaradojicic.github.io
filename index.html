@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final project</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function startTime() {
+            const today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            let s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+            setTimeout(startTime, 1000);
+        }
+
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+</head>
+
+<body onload="startTime()">
+    <header>
+        <h1 class="main-title">The village of Severovo</h1>
+        <div class="time" id="txt"></div>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#offer">What we offer</a></li>
+                <li><a href="#map">Location map</a></li>
+                <li class="nav-contact"><a href="#contact">Sign up and contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-image">
+            <h2 class="top-left">Nature and peace</h2>
+            <h3 class="bottom-left">Let&apos;s go back to our roots!</h3>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2 class="h2-title">About us</h2>
+            <p class="p-about">The village of Severovo is located 22 km from Arilje. The village was named by the north
+                wind. Severovo
+                is located into hilly terrain. The majority of the population is engaged in agriculture. They make the
+                biggest income by growing raspberries and selling firewood.</p>
+        </section>
+        <section id="offer">
+            <h2 class="h2-title">What we offer</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3 class="card-title">Nature</h3>
+                    <img class="card-img" src="project-images/autumn.jpg" alt="autumn">
+                    <p class="p-card">Mountain, river are only part of our
+                        natural
+                        beauties that are waiting for you.</p>
+                    <button class="card-btn"><a class="card-btn-link"
+                            href="https://www.google.com/search?sxsrf=ALiCzsY8QlGRuqusxeeR9HjKOJB0PUX7PA:1665734448912&source=univ&tbm=isch&q=severovo+nature+arilje&fir=1KoBkFAWlCIQDM%252CmQWFHaXpSo3yfM%252C_%253B2FshjJ9HG818XM%252CfZBR5vVuiZ1RhM%252C_%253Ba5ceFac_P4jsNM%252C14irCTR2vmP3lM%252C_%253BkuwVp54eQ4xb2M%252C4Wz607FDubQSSM%252C_%253BWw-iedaFGRE34M%252C7EtaUlcq5D8EDM%252C_%253Bt7DMo_n0bp7teM%252CgO9nRhaeoZ9RqM%252C_%253BlrsGKfQXvkfbwM%252CnqcKfTCqJrqDyM%252C_%253BltY0sdIlkHPhMM%252C1NyUO55_v_1gZM%252C_%253BnR6IS5UbQ83CgM%252Cn5d1SkzOWZr-iM%252C_%253BzQXCQ6BySirkHM%252Ce6v8-ITPt0G13M%252C_&usg=AI4_-kSiHHyY-qOIIwX4Kqxnew6Q110xrQ&sa=X&ved=2ahUKEwjmgfiwoN_6AhVPDewKHVUJAzsQjJkEegQICBAC&biw=1366&bih=657&dpr=1"
+                            target="_blank">More</a><span>&rarr;</span></button>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Raspberries</h3>
+                    <img class="card-img" src="project-images/raspberries.jpg" alt="raspberries">
+                    <p class="p-card">We are located in an area known as the raspberry capital of the world.</p>
+                    <button class="card-btn"><a class="card-btn-link" href="https://www.tasteatlas.com/ariljska-malina"
+                            target="_blank">More</a><span>&rarr;</span></button>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Food</h3>
+                    <img class="card-img" src="project-images/princess cake.jpg" alt="princess">
+                    <p class="p-card">With us you can always taste fresh food made with a lot of love.</p>
+                    <button class="card-btn"><a class="card-btn-link"
+                            href="https://www.tripadvisor.com/Restaurants-g4563984-Arilje_Central_Serbia.html"
+                            target="_blank">More</a><span>&rarr;</span></button>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Winter</h3>
+                    <img class="card-img" src="project-images/winter.jpg" alt="winter">
+                    <p class="p-card">Our village is especially beautiful in winter, where you can enjoy
+                        winter
+                        magic.</p>
+                    <button class="card-btn"><a class="card-btn-link"
+                            href="https://www.google.com/search?q=winter+in++arilje&tbm=isch&ved=2ahUKEwiosq3uo9_6AhUSuaQKHVCcDEAQ2-cCegQIABAA&oq=winter+in++arilje&gs_lcp=CgNpbWcQAzoECCMQJ1C7Dli7DmD1FWgAcAB4AIAB3AGIAekCkgEFMC4xLjGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=1xpJY-hqkvKSBdC4soAE&bih=657&biw=1366&rlz=1C1_____srRS750RS750"
+                            target="_blank">More</a><span>&rarr;</span></button>
+                </div>
+            </div>
+            <p class="inf-wikipedia">If you want to know more about us, please visit <a
+                    href="https://en.wikipedia.org/wiki/Severovo" target="_blank">Wikipedia</a> or read <a
+                    href="https://www.arilje.in.rs/severovo/" target="_blank">this article.</a> </p>
+            </p>
+        </section>
+        <section id="map">
+            <h2 class="h2-title">Location map</h2>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46120.91889415933!2d19.93022853322974!3d43.74051995412134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475786c6b71fba99%3A0xb541fa08e533f50e!2z0KHQtdCy0LXRgNC-0LLQvg!5e0!3m2!1ssr!2srs!4v1665674246127!5m2!1ssr!2srs"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="contact">
+            <h3 class="h3-sign">Sign up for our newsletter</h3>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><label class="form-label" for="name">Name:</label></td>
+                        <td><input class="form-input" type="text" value="" id="name" name="name"
+                                placeholder="Please enter your name" required></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><label class="form-label" for="lname"> Last name:</label></td>
+                        <td><input class="form-input" type="text" value="" id="lname" name="lname"
+                                placeholder="Please enter your last name" required></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><label class="form-label" for="email">Email:</label></td>
+                        <td><input class="form-input" type="email" value="" id="email" name="email"
+                                placeholder="Please enter your email" required>
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><button class="form-btn">Sign in</button></td>
+                    </tr>
+                </table>
+
+            </form>
+        </section>
+        <section id="contact">
+            <h3 class="h3-contact">Contact</h3>
+            <p class="p-contact">If you are a nature lover and like to explore new landscapes, the village of Severovo
+                should be your new
+                destination. You can contact us via <a href="mailto:thevillageofseverovo@gmail.com"
+                    class="contact-email">thevillageofseverovo@gmail.com</a> and a phone
+                number <a href="tel:+381641234567" class="contact-number">+381 64 12 34 567</a></p>
+            <p class="p-contact">Also you can find us on <a href="https://www.facebook.com/"
+                    target="_blank">facebook</a> and <a href="https://www.instagram.com/accounts/login/"
+                    target="_blank">instagram.</a></p>
+        </section>
+    </main>
+    <footer>
+        <p class="p-footer">&copy;2022 Ethno Tourism The Willage of Severovo | All Rights Reserved</p>
+        <p class="p-footer">This project is coded by<a href="https://github.com/radaradojicic" target="_blank"
+                class="github-profile"> Rada
+                Radojicic </a>and is <a href="putanja do koda na github-u" target="_blank"
+                class="hithub-code">open-sourced</a> on GitHub.
+        </p>
+
+    </footer>
+</body>
+
+</html>

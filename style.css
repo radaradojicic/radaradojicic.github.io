@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("project-images/Behongo.jpg");
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding: 25px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.main-title {
+    text-align: center;
+    background-color: #0f6b0f7e;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+li {
+    display: inline;
+    text-align: center;
+}
+
+li a {
+    display: inline;
+    color: #dddddd;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-contact {
+    float: right;
+}
+
+li a:hover {
+    background-color: #eff2ed;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.hero-image {
+    background-image: url("project-images/hero-image.jpg");
+    background-color: #1d8d1d6e;
+    height: 700px;
+    background-size: cover;
+    position: relative;
+}
+
+.top-left {
+    position: absolute;
+    left: 50px;
+    border: 1px;
+    background-color: #faf0e6;
+    padding: 20px;
+    text-shadow: 2px 2px 4px;
+    color: #1423c4;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 70px;
+    padding: 20px;
+    border: 1px;
+    background-color: #98fb98;
+}
+
+.h2-title,
+.h3-contact,
+.h3-sign {
+    padding: 8px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #486b34;
+    font-style: italic;
+}
+
+.p-about,
+.inf-wikipedia,
+.p-contact {
+    margin: 16px 2px;
+    border: 1px solid black;
+    background-color: greenyellow;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.p-about {
+    padding-bottom: 15px;
+}
+
+.inf-wikipedia a,
+.p-contact a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+    background-color: #db1a1a;
+}
+
+.about {
+    padding-top: 0px;
+    margin-top: 0px;
+
+}
+
+main {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.card-container {
+    margin: 12px 16px;
+    padding-top: 30px;
+}
+
+.card {
+    display: inline-block;
+    width: 24%;
+    background-color: #ffffff;
+    padding: 8px;
+    height: fit-content;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.card-img {
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.card-title {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.p-card {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 20px;
+    height: 100px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.card-btn {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #417141;
+    border: none;
+    border-radius: 8px;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 4px;
+}
+
+.card-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.card-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 20px;
+    transition: 0.5s;
+}
+
+.card-btn:hover span {
+    padding-left: 25px;
+    color: #000000;
+}
+
+iframe {
+    margin: 30px auto;
+    width: 80%;
+    height: 500px;
+    filter: invert(100%);
+}
+
+.map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+table {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    background-color: greenyellow;
+    border-radius: 8px;
+}
+
+.form-label {
+    padding: 8px;
+    font-weight: bold;
+}
+
+.form-input {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.form-btn {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(95, 95, 162);
+    cursor: pointer;
+    margin: auto;
+}
+
+footer {
+    background-color: #032a03;
+    color: aliceblue;
+    padding: 20px;
+}
+
+.p-footer {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.github-code,
+.github-profile {
+    text-decoration: none;
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
+    background-color: black;
+}
+
+.card-btn-link {
+    text-decoration: none;
+    color: white;
+}
+
+.time {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: #3647b2;
+}
+
+@media screen and (max-width: 600px) {
+
+    /*.top-nav.responsive {
+        position: relative;
+    }
+
+    .top-nav.responsive a {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .top-nav.top-nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }*/
+
+    .card {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+}
